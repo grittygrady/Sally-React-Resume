@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sally's Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app-root">
+
+  </div>
+
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type="text/babel">
+    // Our code will go here
+
+  function App(props) {
+    console.log(props)
+    return (
+      <div>
+        <header>
+          <h1>Sally Student's Resume</h1>
+        </header>
+        <main className="wrapper">
+          <section className="contact">
+            <img src="https://pbs.twimg.com/profile_images/527111759543689216/_hAr0LMU_400x400.jpeg" alt="Sally Profile Picture" />
+            <div className="contact-info">
+            <h2>Contact</h2>
+            <address>
+              <a href="mailto:studentsally@gmail.com">studentsally@gmail.com</a>
+              <br/>
+              <a href="tel:6468675309">646.867.5309</a>
+            </address>
+            </div>
+          </section>
+          <hr />
+        <div className="history">
+          <section className="education">
+            <h2>Education</h2>
+            <h4>Thinkful Bootcamp</h4>
+            <p>2020 - Present</p>
+          </section>
+          <hr/>
+          <section className="work-history">
+            <h2>Work History</h2>
+            <h3>The Nightmare Before Christmas</h3>
+            <ul>
+              <li>Lead Actress</li>
+              <li>1992-1993</li>
+              <li>Moved 1 frame at a time while singing beautifully!</li>
+            </ul>
+            <h3>Inanimate Object</h3>
+            <ul>
+              <li>Collection of cloth and wires</li>
+              <li>1990-1992</li>
+              <li>Didn't accomplish much, to be honest.</li>
+            </ul>
+          </section>
+        </div>  
+            
+        </main>
+      </div>
+    );
+  }
+
+    ReactDOM.render(
+      <App />,
+      document.querySelector('#app-root')
+    );
+</script>
+</body>
+
+</html>

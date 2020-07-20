@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+/* CSS FONT RULES 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #283663;
+  text-align: center;
+  color: #B7C9DB;
+  padding-bottom: 2rem;
+}
+
+header {
+  color: #B7C9DB;
+  background: #15151F;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3, h4 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+p, ul, li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border-radius: 25px;
+  max-width: 70vw;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #B7C9DB;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  margin-bottom: 1rem;
+  border: 1px solid #15151F;
+}
+
+/*** CLASS DECLARATIONS***/
+.wrapper {
+  width: 70vw;
+  margin: auto;
+}
+
+.contact {
+  margin-bottom: 1rem;
+}
+
+.education {
+  margin-bottom: 1.5rem;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media only screen
+and (min-width : 1224px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3, h4 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  ul, li, p {
+    font-size: 1.5rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .history {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .history hr {
+    display: none;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .contact h2 {
+    font-size: 5rem;
+  }
+
+  address {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
